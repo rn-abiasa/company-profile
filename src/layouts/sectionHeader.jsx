@@ -8,9 +8,7 @@ const SectionHeader = ({ alignment, className, title, description }) => {
   return (
     <>
       <div className={`flex flex-col gap-3 ${className}`}>
-        <h2
-          className={`text-3xl font-semibold ${Alignments[alignment]} max-w-80`}
-        >
+        <h2 className={`text-3xl font-semibold ${Alignments[alignment]}`}>
           {title}
         </h2>
         <p

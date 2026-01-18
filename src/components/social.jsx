@@ -3,7 +3,7 @@ const Social = ({ icon }) => {
 
   return (
     <>
-      <div className="bg-white rounded-full flex justify-center items-center h-10 w-10">
+      <div className="bg-white rounded-full flex justify-center items-center h-8 w-8">
         {icon}
       </div>
     </>

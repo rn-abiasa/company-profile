@@ -11,7 +11,7 @@ const FooterItem = ({ title, links }) => {
   return (
     <>
       <div>
-        <p className="text-base font-semibold text-white">{title}</p>
+        <p className="text-sm font-semibold text-white">{title}</p>
         <div className="flex flex-col gap-3 mt-4">
           {links.map((link) => (
             <a href={link.url} className="text-sm font-normal text-white/50">
@@ -27,7 +27,7 @@ const FooterItem = ({ title, links }) => {
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black px-5 py-10">
+      <footer className="bg-black px-5 py-10 sm:px-16 md:flex md:justify-between md:items-center md:px-26 lg:px-36 xl:px-48">
         <div>
           <h3 className="text-2xl font-semibold text-white">Company</h3>
           <p className="text-sm font-normal text-white/50 mt-2">
@@ -45,13 +45,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-5 gap-y-10 mt-14">
+        <div className="grid grid-cols-2 gap-5 gap-y-10 mt-14 md:grid-cols-3 md:mt-0 md:gap-20">
           <FooterItem title="Links" links={links} />
           <FooterItem title="Links" links={links} />
           <FooterItem title="Links" links={links} />
         </div>
       </footer>
-      <div className="bg-black border-t border-white/20 p-5">
+      <div className="bg-black border-t border-white/20 p-5 sm:px-16 md:px-26 lg:px-36 xl:px-48">
         <p className="text-sm font-normal text-white/50">
           2026 Abiasa. All Rights Reserved.
         </p>
